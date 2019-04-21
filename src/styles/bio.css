@@ -1,0 +1,12 @@
+.bio-container {
+  height: 92vh;
+  display: flex;
+}
+
+.bio-left {
+  width: 50%;
+}
+
+.bio-right {
+  width: 50%;
+}

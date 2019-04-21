@@ -1,0 +1,5 @@
+.projects-container {
+  background-color: rgba(137, 177, 241);
+  height: 92vh;
+  clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%);
+}

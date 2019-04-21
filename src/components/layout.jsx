@@ -24,11 +24,11 @@ const Layout = ({ children }) => (
         }
       }
     `}
+    // eslint-disable-next-line no-unused-vars
     render={data => (
       <>
-        <Header siteTitle={data.site.siteMetadata.title} />
+        <Header />
         <main>{children}</main>
-        <footer>...</footer>
       </>
     )}
   />

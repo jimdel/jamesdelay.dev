@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Eric Lizzul`,
-    description: `Eric Lizzul: Video Production & Content Creation`,
+    title: `James DeLay`,
+    description: `James DeLay: Full-stack JavaScript Developer`,
     author: `@JDeLay-JR`
   },
   plugins: [
@@ -18,8 +18,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `eric-lizzul-portfolio`,
-        short_name: `el-portfolio`,
+        name: `james-delay-portfolio`,
+        short_name: `jd-portfolio`,
         start_url: `/`,
         background_color: `#777777`,
         theme_color: `#777777`,

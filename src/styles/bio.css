@@ -3,10 +3,6 @@
   display: flex;
 }
 
-.bio-left {
-  width: 50%;
-}
-
-.bio-right {
-  width: 50%;
+.headshot {
+  clip-path: circle(100%);
 }

@@ -38,6 +38,19 @@ header {
     animation: moveInRight 1s ease-out;
 }
 
+/* Anything smaller than desktop */
+@media only screen and (max-width: 768px) {
+    .header-container {
+        width: 100%;
+    }
+    .header-container * {
+        padding-left: 5%;
+        /* text-align: center; */
+    }
+}
+
+/* Animations */
+
 @keyframes moveInRight {
     0% {
         opacity: 0;

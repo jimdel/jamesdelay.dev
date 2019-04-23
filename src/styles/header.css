@@ -38,11 +38,14 @@ header {
     animation: moveInRight 1s ease-out;
 }
 
-/* Media Queries */
+/* Anything smaller than desktop */
 @media only screen and (max-width: 768px) {
     .header-container {
+        width: 100%;
+    }
+    .header-container * {
         padding-left: 5%;
-        text-align: center;
+        /* text-align: center; */
     }
 }
 

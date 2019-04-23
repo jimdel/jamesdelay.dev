@@ -1,7 +1,7 @@
 {
-    "name": "eric-lizzul-portfolio",
+    "name": "james-delay-portfolio",
     "private": true,
-    "description": "A portfolio site for Eric Lizzul",
+    "description": "A portfolio site for James DeLay",
     "version": "0.1.0",
     "author": "James DeLay <jdelay.jr@gmail.com>",
     "dependencies": {
@@ -35,7 +35,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/JDeLay-JR/eric-portfolio"
+        "url": "https://github.com/JDeLay-JR/james-delay-portfolio"
     },
     "bugs": {
         "url": "https://github.com/gatsbyjs/gatsby/issues"

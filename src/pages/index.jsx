@@ -7,7 +7,7 @@ import Projects from "../components/projects";
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+    <SEO title="Home" keywords={[`portfolio`, `James`, `DeLay`]} />
     <Bio />
     <Projects />
   </Layout>

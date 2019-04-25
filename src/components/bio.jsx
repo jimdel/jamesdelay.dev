@@ -1,12 +1,14 @@
-/* eslint-disable react/jsx-one-expression-per-line */
 import React from "react";
-// eslint-disable
 import "../styles/bio.css";
 
 const Bio = () => (
-  <div className="bio-container">
-    <div className="col-4">left</div>
-    <div className="col-8">right</div>
+  <div className="row bio-container">
+    <div className="col-xs-4">
+      <div className="box">left</div>
+    </div>
+    <div className="col-xs-8">
+      <div className="box">right</div>
+    </div>
   </div>
 );
 

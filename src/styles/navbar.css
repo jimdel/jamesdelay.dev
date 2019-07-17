@@ -1,0 +1,10 @@
+nav {
+    /* display: none; */
+    position: fixed;
+    width: 100vw;
+    height: 5vh;
+    z-index: 1;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(blue), to(white));
+    background-image: linear-gradient(to bottom, #88b1f1, #6483b3);
+    box-shadow: 0px 1px 9px #333333;
+}

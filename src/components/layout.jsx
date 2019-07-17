@@ -12,6 +12,7 @@ import { StaticQuery, graphql } from "gatsby";
 // Components & Styles
 import Header from "./header";
 import "../styles/layout.css";
+import Navbar from "./navbar";
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -27,6 +28,7 @@ const Layout = ({ children }) => (
     // eslint-disable-next-line no-unused-vars
     render={data => (
       <>
+        <Navbar />
         <Header />
         <main>{children}</main>
       </>

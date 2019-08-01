@@ -2,19 +2,31 @@ import React from "react";
 import "../styles/bio.css";
 
 const Bio = () => (
-  <div className="row bio-container">
-    <div className="col-lg-4 col-xs-12">
-      <div className="box">left</div>
+  <section className="row grid-container">
+    <div className="moveInLeft flex-center grid-cell">
+      <figure>
+        <img
+          alt="me!"
+          className="headshot"
+          src="https://tinyurl.com/y5gt5uaq"
+        />
+      </figure>
     </div>
-    <div className="col-lg-8 col-xs-12">
-      <div className="box">
-        <p>Paragraph about me</p>
-        <p>Paragraph about education/background</p>
-        <p>Paragraph about how I started coding</p>
-        <p>Paragraph about what I am passionate about (code related)</p>
-      </div>
+    <div className="moveInRight grid-cell">
+      <h2>About Me</h2>
+      <p className="">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat.
+      </p>
+      <p className="">
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
     </div>
-  </div>
+  </section>
 );
 
 export default Bio;

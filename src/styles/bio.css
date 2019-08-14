@@ -1,14 +1,3 @@
-.grid-cell {
-  min-height: 400px;
-  height: 100%;
-}
-
-.flex-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -16,18 +5,28 @@
   grid-row-gap: 1rem;
 }
 
+.moveInLeft {
+  animation: 1s moveInLeft ease-out;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .headshot {
   border-radius: 100%;
   height: 300px;
   width: 300px;
 }
 
-.about {
-  padding: 0 .5rem 0 .5rem;
+.grid-cell {
+  min-height: 400px;
+  height: 100%;
 }
 
-.moveInLeft {
-  animation: 1s moveInLeft ease-out;
+.about {
+  padding: 0 0.5rem 0 0.5rem;
 }
 
 .moveInRight {

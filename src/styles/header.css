@@ -1,84 +1,82 @@
 header {
-    position: relative;
-    height: 92vh;
-    background-image: linear-gradient(
-        to right bottom,
-        rgba(137, 177, 241, 0.8),
-        rgba(28, 64, 122, 0.8)
+  position: relative;
+  height: 92vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(137, 177, 241, 0.8),
+      rgba(28, 64, 122, 0.8)
     ),
     url("../images/hero.png");
-    background-size: cover;
-    clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
-    color: #fff;
-    text-shadow: 0 5px 20px rgba(0, 0, 0, 0.479);
+  background-size: cover;
+  clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+  color: #fff;
+  text-shadow: 0 5px 20px rgba(0, 0, 0, 0.479);
 }
 
 .header-container {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translateX(-50%);
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .header-main {
-    display: block;
-    font-size: 2rem;
-    letter-spacing: 10px;
-    font-weight: 100;
-    text-transform: uppercase;
-    animation: moveInRight 1s ease-out;
+  display: block;
+  letter-spacing: 10px;
+  font-weight: 100;
+  text-transform: uppercase;
+  animation: moveInRight 1s ease-out;
 }
 
 .header-sub {
-    display: block;
-    font-size: 1rem;
-    letter-spacing: 5px;
-    font-weight: 100;
-    text-transform: uppercase;
-    animation: moveInRight 1s ease-out;
+  display: block;
+  letter-spacing: 5px;
+  font-weight: 100;
+  text-transform: uppercase;
+  animation: moveInRight 1s ease-out;
 }
 
 /* Anything smaller than desktop */
 @media only screen and (max-width: 768px) {
-    .header-container {
-        width: 100%;
-    }
-    .header-container * {
-        padding-left: 15%;
-        /* text-align: center; */
-    }
+  .header-container {
+    width: 100%;
+  }
+  .header-container * {
+    padding-left: 15%;
+    /* text-align: center; */
+  }
 }
 
 /* Smaller phones */
 @media only screen and (max-width: 380px) {
-    .header-main {
-        font-size: 1.5rem;
-    }
-    .header-sub {
-        font-size: .9rem;
-    }
+  .header-main {
+    font-size: 1.5rem;
+  }
+  .header-sub {
+    font-size: 0.9rem;
+  }
 }
 
 /* Smaller phones */
 @media only screen and (max-width: 320px) {
-    .header-main,
-    .header-sub {
-        text-align: center;
-    }
+  .header-main,
+  .header-sub {
+    text-align: center;
+  }
 }
 
 /* Animations */
 
 @keyframes moveInRight {
-    0% {
-        opacity: 0;
-        transform: translateX(-200px);
-    }
-    80% {
-        transform: translateX(10px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
+  0% {
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+  80% {
+    transform: translateX(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }

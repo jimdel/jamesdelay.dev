@@ -2,7 +2,7 @@ import React from "react";
 import "../styles/bio.css";
 
 const Bio = () => (
-  <section className="row grid-container">
+  <section className="grid-container">
     <div className="moveInLeft flex-center grid-cell">
       <figure>
         <img

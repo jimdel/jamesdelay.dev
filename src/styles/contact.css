@@ -1,0 +1,107 @@
+.contact-container {
+  padding-bottom: 5rem;
+}
+
+.contact-header {
+  text-align: center;
+}
+
+.contact-form-container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 85%;
+}
+
+.contact-blurb {
+  text-align: center;
+}
+
+.contact-input {
+  border: 2px solid #e6e6e6;
+  border-radius: 8px;
+  height: 2.3rem;
+  margin-bottom: 3rem;
+  padding: 1rem;
+}
+
+.contact-input:focus {
+  box-shadow: 0px 0px 6px rgba(137, 177, 241);
+  border: 2px solid rgba(137, 177, 241);
+}
+
+.error {
+  box-shadow: 0px 0px 6px rgb(241, 137, 137);
+  border: 2px solid rgb(241, 137, 137);
+}
+
+.contact-message {
+  height: 10rem;
+  margin-bottom: 1rem;
+}
+
+.socials {
+  width: 60%;
+  margin: 0 auto 0 auto;
+  display: flex;
+  justify-content: space-between;
+  font-size: 2.5rem;
+  padding: 2rem 0 2rem;
+}
+
+.social-icon {
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+
+.social-icon:hover {
+  transform: translateY(-3px);
+}
+
+.social-icon:active {
+  transform: translateY(3px);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Socials */
+.github {
+  color: rgb(36, 41, 46, 0.5);
+}
+
+.github:hover {
+  color: rgb(36, 41, 46, 1);
+}
+
+.linked-in {
+  color: rgba(0, 116, 178, 0.5);
+}
+
+.linked-in:hover {
+  color: rgba(0, 116, 178, 1);
+}
+
+.twitter {
+  color: rgba(29, 161, 242, 0.5);
+}
+
+.twitter:hover {
+  color: rgba(29, 161, 242, 1);
+}
+
+@media (max-width: 1000px) {
+  .twitter {
+    color: rgba(29, 161, 242, 1);
+  }
+  .linked-in {
+    color: rgba(0, 116, 178, 1);
+  }
+  .github {
+    color: rgb(36, 41, 46, 1);
+  }
+  .social-icon:active {
+    transform: translateY(3px);
+  }
+}

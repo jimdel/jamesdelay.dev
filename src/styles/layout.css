@@ -24,7 +24,10 @@ section,
 summary {
   display: block;
 }
-
+input:focus,
+textarea:focus {
+  outline: none;
+}
 audio,
 canvas,
 progress,

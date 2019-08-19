@@ -2,6 +2,11 @@ import React from "react";
 import "../styles/contact.css";
 import { FaLinkedinIn, FaGithub, FaTwitter } from "react-icons/fa";
 
+const handleSubmit = evt => {
+  evt.preventDefault();
+  console.log("Clicked!");
+};
+
 const Contact = () => (
   <section className="contact-container">
     <h2 className="contact-header">Contact</h2>
@@ -23,6 +28,13 @@ const Contact = () => (
           className="contact-input contact-message"
           placeholder="Message"
         />
+        <button
+          className="btn-submit"
+          onClick={evt => handleSubmit(evt)}
+          type="submit"
+        >
+          Send
+        </button>
       </form>
     </div>
   </section>

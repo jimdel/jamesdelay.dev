@@ -14,14 +14,9 @@ header {
 }
 
 .header-container {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translateX(-50%);
 }
 
 .header-main {
-  display: block;
   letter-spacing: 10px;
   font-weight: 100;
   text-transform: uppercase;
@@ -29,11 +24,11 @@ header {
 }
 
 .header-sub {
-  display: block;
   letter-spacing: 5px;
   font-weight: 100;
   text-transform: uppercase;
   animation: moveInRight 1s ease-out;
+  width: 100%;
 }
 
 /* Anything smaller than desktop */

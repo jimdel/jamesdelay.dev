@@ -18,13 +18,27 @@
 
 /* media queries */
 
-@media (max-width: 950px) and (min-width: 850px) {
+@media (max-width: 965px) and (min-width: 850px) {
   .projects-grid-container {
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   }
 }
 
+@media (max-width: 900px) {
+  .projects-container {
+    clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
+  }
+  .projects-container {
+    padding-top: 9rem;
+    padding-bottom: 7rem;
+  }
+}
+
 @media (max-width: 450px) {
+  .projects-container {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
   .projects-grid-container {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }

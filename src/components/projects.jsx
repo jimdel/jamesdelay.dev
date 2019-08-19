@@ -28,6 +28,13 @@ const Projects = () => (
         image={StockImage}
         title="Test Title"
       />
+      <Card
+        className="projects-grid-cell"
+        github="https://github.com/JDeLay-JR"
+        readme="https://google.com"
+        image={StockImage}
+        title="Test Title"
+      />
     </div>
   </section>
 );

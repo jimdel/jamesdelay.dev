@@ -48,22 +48,44 @@
   padding: 2rem 0 2rem;
 }
 
-.social-icon {
+.social-icon,
+.btn-submit {
   cursor: pointer;
   transition-duration: 0.3s;
 }
 
-.social-icon:hover {
+.social-icon:hover,
+.btn-submit:hover {
   transform: translateY(-3px);
 }
 
-.social-icon:active {
+.social-icon:active,
+.btn-submit:active {
   transform: translateY(3px);
 }
 
 .contact-form {
   display: flex;
   flex-direction: column;
+}
+
+.btn-submit {
+  margin-left: auto;
+  width: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2.5rem;
+  border-radius: 8px;
+  margin-top: 1rem;
+  color: #fff;
+  border: none;
+  box-shadow: 1px 1px 12px #e6e6e6;
+  background: #89b1f1;
+}
+
+.btn-submit:focus {
+  outline: 0;
 }
 
 /* Socials */

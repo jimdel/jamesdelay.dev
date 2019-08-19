@@ -5,7 +5,9 @@ import StockImage from "../images/stock.png";
 
 const Projects = () => (
   <section className="projects-container">
-    <h2 className="projects-headline">Projects</h2>
+    <h2 id="projects" className="projects-headline">
+      Projects
+    </h2>
     <div className="projects-grid-container">
       <Card
         className="projects-grid-cell"

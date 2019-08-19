@@ -3,8 +3,8 @@ header {
   height: 92vh;
   background-image: linear-gradient(
       to right bottom,
-      rgba(137, 177, 241, 0.8),
-      rgba(28, 64, 122, 0.8)
+      rgba(137, 177, 241, 0.85),
+      rgba(28, 64, 122, 0.85)
     ),
     url("../images/hero.png");
   background-size: cover;
@@ -14,6 +14,9 @@ header {
 }
 
 .header-container {
+  text-align: center;
+  padding-top: 25%;
+  width: 100%;
 }
 
 .header-main {
@@ -21,6 +24,7 @@ header {
   font-weight: 100;
   text-transform: uppercase;
   animation: moveInRight 1s ease-out;
+  font-size: 4rem;
 }
 
 .header-sub {
@@ -29,38 +33,54 @@ header {
   text-transform: uppercase;
   animation: moveInRight 1s ease-out;
   width: 100%;
+  font-size: 1.5rem;
 }
 
-/* Anything smaller than desktop */
-@media only screen and (max-width: 768px) {
+@media (max-width: 900px) {
   .header-container {
-    width: 100%;
-  }
-  .header-container * {
-    padding-left: 15%;
-    /* text-align: center; */
+    padding-top: 30%;
   }
 }
 
-/* Smaller phones */
-@media only screen and (max-width: 380px) {
+@media (max-width: 650px) {
+  header {
+    height: 82vh;
+    clip-path: polygon(0 0, 100% 0, 100% 70vh, 0 100%);
+  }
+  .header-container {
+    padding-top: 40%;
+  }
+  .header-main {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 590px) {
+  .header-container {
+    padding-top: 47%;
+  }
+  .header-main {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 490px) {
+  .header-container {
+    padding-top: 60%;
+  }
+  .header-main {
+    font-size: 2rem;
+  }
+  .header-sub {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 340px) {
   .header-main {
     font-size: 1.5rem;
   }
-  .header-sub {
-    font-size: 0.9rem;
-  }
 }
-
-/* Smaller phones */
-@media only screen and (max-width: 320px) {
-  .header-main,
-  .header-sub {
-    text-align: center;
-  }
-}
-
-/* Animations */
 
 @keyframes moveInRight {
   0% {

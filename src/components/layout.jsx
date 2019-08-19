@@ -7,10 +7,12 @@
 
 import React from "react";
 import PropTypes from "prop-types";
+
 import { StaticQuery, graphql } from "gatsby";
 
 // Components & Styles
 import Header from "./header";
+import Navigation from "./navigation";
 import "../styles/layout.css";
 
 const Layout = ({ children }) => (
@@ -27,6 +29,7 @@ const Layout = ({ children }) => (
     // eslint-disable-next-line no-unused-vars
     render={data => (
       <>
+        <Navigation />
         <Header />
         <main>{children}</main>
       </>

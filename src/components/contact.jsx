@@ -9,7 +9,9 @@ const handleSubmit = evt => {
 
 const Contact = () => (
   <section className="contact-container">
-    <h2 className="contact-header">Contact</h2>
+    <h2 id="contact" className="contact-header">
+      Contact
+    </h2>
     <div className="contact-form-container">
       <p className="contact-blurb">
         Want to get in touch? I&rsquo;d love to hear from you! Here&rsquo;s how

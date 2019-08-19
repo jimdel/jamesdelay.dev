@@ -4,16 +4,12 @@ import "../styles/bio.css";
 const Bio = () => (
   <section className="grid-container">
     <div className="moveInLeft flex-center grid-cell">
-      <figure>
-        <img
-          alt="me!"
-          className="headshot"
-          src="https://tinyurl.com/y5gt5uaq"
-        />
-      </figure>
+      <img alt="me!" className="headshot" src="https://tinyurl.com/y5gt5uaq" />
     </div>
     <div className="moveInRight grid-cell">
-      <h2>About Me</h2>
+      <h2 id="about" className="about">
+        About Me
+      </h2>
       <p className="">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
@@ -25,7 +21,6 @@ const Bio = () => (
         dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
         proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </p>
-      <faBeer />
     </div>
   </section>
 );

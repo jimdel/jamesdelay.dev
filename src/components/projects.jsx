@@ -4,7 +4,7 @@ import "../styles/projects.css";
 import { blogCode, tinkleCode, scrapprCode, siteCode } from "../../site-config";
 import StockImage from "../images/stock.png";
 import itsatechblog from "../images/itsatechblog.png";
-import personalsite from "../images/personalsite.png";
+import personalSite from "../images/personalSite.PNG";
 
 const Projects = () => (
   <section className="projects-container">
@@ -25,7 +25,7 @@ const Projects = () => (
         github={siteCode}
         blurb="You're here!"
         readme="https://google.com"
-        image={personalsite}
+        image={personalSite}
         title="Personal Site"
       />
       <Card

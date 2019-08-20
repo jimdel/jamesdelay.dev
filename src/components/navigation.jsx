@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { FaBars } from "react-icons/fa";
+import { blogLink } from "../../site-config";
 import "../styles/navigation.css";
 
 const showNav = (nav, icon, links) => {
@@ -46,6 +47,13 @@ const Nav = () => {
       />
       <a onClick={() => toggleNav()} className="nav-link hidden" href="#about">
         About
+      </a>
+      <a
+        onClick={() => toggleNav()}
+        className="nav-link hidden"
+        href={blogLink}
+      >
+        Blog
       </a>
       <a
         onClick={() => toggleNav()}

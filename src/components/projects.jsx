@@ -1,7 +1,10 @@
 import React from "react";
 import Card from "./card";
 import "../styles/projects.css";
+import { blogCode, tinkleCode, scrapprCode, siteCode } from "../../site-config";
 import StockImage from "../images/stock.png";
+import itsatechblog from "../images/itsatechblog.png";
+import personalsite from "../images/personalsite.png";
 
 const Projects = () => (
   <section className="projects-container">
@@ -11,31 +14,34 @@ const Projects = () => (
     <div className="projects-grid-container">
       <Card
         className="projects-grid-cell"
-        github="https://github.com/JDeLay-JR"
+        github={blogCode}
         readme="https://google.com"
-        image={StockImage}
-        title="Test Title"
+        image={itsatechblog}
+        title="Itsa Tech Blog"
+        blurb="Web Dev Tech Blog"
       />
       <Card
         className="projects-grid-cell"
-        github="https://github.com/JDeLay-JR"
+        github={siteCode}
+        blurb="You're here!"
         readme="https://google.com"
-        image={StockImage}
-        title="Test Title"
+        image={personalsite}
+        title="Personal Site"
       />
       <Card
         className="projects-grid-cell"
-        github="https://github.com/JDeLay-JR"
+        github={tinkleCode}
+        blurb="NYC public bathroom locator"
         readme="https://google.com"
         image={StockImage}
-        title="Test Title"
+        title="Tinkle"
       />
       <Card
         className="projects-grid-cell"
-        github="https://github.com/JDeLay-JR"
+        github={scrapprCode}
         readme="https://google.com"
         image={StockImage}
-        title="Test Title"
+        title="Scrappr"
       />
     </div>
   </section>

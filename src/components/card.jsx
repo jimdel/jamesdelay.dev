@@ -7,11 +7,11 @@ const navToExternalURL = url => {
   window.location.assign(url);
 };
 
-const Card = ({ github, readme, image, title }) => (
+const Card = ({ github, readme, image, title, blurb }) => (
   <div className="card-container" style={{ backgroundImage: `url(${image})` }}>
     <div className="overlay">
       <h3 className="project-name">{title}</h3>
-      <h4 className="project-blurb">This is a fake blurb</h4>
+      <h4 className="project-blurb">{blurb}</h4>
     </div>
     <div className="card-button-container">
       <FaGithub
@@ -30,7 +30,8 @@ Card.propTypes = {
   github: PropTypes.string.isRequired,
   readme: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired
+  title: PropTypes.string.isRequired,
+  blurb: PropTypes.string.isRequired
 };
 
 export default Card;

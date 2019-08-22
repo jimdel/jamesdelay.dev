@@ -1,0 +1,15 @@
+.project-container {
+  position: relative;
+}
+
+.project-name {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 10%;
+}
+
+.project-img {
+  padding: 0 2rem 0 1rem;
+  margin: 0;
+}

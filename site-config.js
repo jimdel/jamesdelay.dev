@@ -5,5 +5,6 @@ module.exports = {
   blogCode: 'https://github.com/JDeLay-JR/BlogSite_2.0',
   blogLink: "https://itsatechblog.netlify.com",
   scrapprCode: 'https://github.com/ScrapprApp/Scrapbooker',
+  scrapprLink: 'http://www.scrapprapp.com/',
   siteCode: 'https://github.com/JDeLay-JR/james-delay-portfolio'
 }

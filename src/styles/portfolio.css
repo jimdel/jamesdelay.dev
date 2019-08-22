@@ -1,14 +1,20 @@
-.projects-container {
+.portfolio-container > h2,
+h3 {
+  color: #fff;
+  text-shadow: 1px 1px 3px #01003a;
+}
+
+.portfolio-container {
   background-color: rgba(137, 177, 241);
   clip-path: polygon(0 15vh, 100% 0, 100% 85%, 0 100%);
   padding-top: 10rem;
   padding-bottom: 12rem;
 }
-.projects-headline {
+.portfolio-headline {
   /* color: #fff; */
   text-align: center;
 }
-.projects-grid-container {
+.portfolio-grid-container {
   display: grid;
   justify-content: center;
   grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
@@ -19,27 +25,27 @@
 /* media queries */
 
 @media (max-width: 965px) and (min-width: 850px) {
-  .projects-grid-container {
+  .portfolio-grid-container {
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   }
 }
 
 @media (max-width: 900px) {
-  .projects-container {
+  .portfolio-container {
     clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
   }
-  .projects-container {
+  .portfolio-container {
     padding-top: 9rem;
     padding-bottom: 7rem;
   }
 }
 
 @media (max-width: 450px) {
-  .projects-container {
+  .portfolio-container {
     padding-top: 7rem;
     padding-bottom: 7rem;
   }
-  .projects-grid-container {
+  .portfolio-grid-container {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
 }

@@ -1,44 +1,51 @@
 import React from "react";
 import "../styles/portfolio.css";
-import { blogCode, tinkleCode, scrapprCode, siteCode } from "../../site-config";
-import StockImage from "../images/stock.png";
+import {
+  blogCode,
+  blogLink,
+  scrapprCode,
+  scrapprLink,
+  siteCode,
+  tinkleCode
+} from "../../site-config";
 import techblog from "../images/techblog.png";
 import scrappr from "../images/scrappr.png";
 import personal from "../images/personal.png";
+
 import Project from "./project";
 
 const Portfolio = () => (
-  <section className="projects-container">
-    <h2 id="projects" className="projects-headline">
+  <section className="portfolio-container">
+    <h2 id="projects" className="portfolio-headline">
       Projects
     </h2>
-    <div className="projects-grid-container">
+    <div className="portfolio-grid-container">
       <Project
-        title="Test"
+        title="Portfolio Site"
         github={siteCode}
         readme="https://google.com"
         url="#"
         image={personal}
       />
       <Project
-        title="Test"
-        github={siteCode}
+        title="Itsa Tech Blog"
+        github={blogCode}
         readme="https://google.com"
-        url="#"
-        image={personal}
+        url={blogLink}
+        image={techblog}
       />
       <Project
-        title="Test"
-        github={siteCode}
+        title="Scrappr"
+        github={scrapprCode}
         readme="https://google.com"
-        url="#"
-        image={personal}
+        url={scrapprLink}
+        image={scrappr}
       />
       <Project
-        title="Test"
-        github={siteCode}
+        title="Tinkle: The App"
+        github={tinkleCode}
         readme="https://google.com"
-        url="#"
+        url={false}
         image={personal}
       />
     </div>

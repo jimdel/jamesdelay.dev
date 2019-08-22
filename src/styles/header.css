@@ -10,7 +10,7 @@ header {
   background-size: cover;
   clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
   color: #fff;
-  text-shadow: 0 5px 20px rgba(0, 0, 0, 0.479);
+  text-shadow: 0 5px 20px #01003a;
 }
 
 .header-container {

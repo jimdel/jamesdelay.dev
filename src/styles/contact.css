@@ -115,6 +115,14 @@
   color: rgba(29, 161, 242, 1);
 }
 
+.pdf {
+  color: rgb(238, 97, 97, 0.5);
+}
+
+.pdf:hover {
+  color: rgb(238, 97, 97, 1);
+}
+
 @media (max-width: 1000px) {
   .twitter {
     color: rgba(29, 161, 242, 1);
@@ -124,6 +132,9 @@
   }
   .github {
     color: rgb(36, 41, 46, 1);
+  }
+  .pdf {
+    color: rgb(238, 97, 97, 1);
   }
   .social-icon:active {
     transform: translateY(3px);

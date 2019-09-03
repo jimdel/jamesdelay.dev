@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "../styles/contact.css";
-import { FaLinkedinIn, FaGithub, FaTwitter } from "react-icons/fa";
+import { FaLinkedinIn, FaGithub, FaTwitter, FaFilePdf } from "react-icons/fa";
+import { linkedIn, github, resume } from "../../site-config";
 
 const handleSubmit = (evt, message) => {
   evt.preventDefault();
@@ -27,6 +28,28 @@ const isDisabled = (email, message, toggle) => {
   }
 };
 
+const navToLink = type => {
+  let url;
+  switch (type) {
+    case "linkedIn":
+      url = linkedIn;
+      break;
+    case "github":
+      url = github;
+      break;
+    case "twitter":
+      url = "https://twitter.com";
+      break;
+    case "resume":
+      url = resume;
+      break;
+    default:
+      url = "#";
+      break;
+  }
+  window.location.href = url;
+};
+
 const Contact = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -42,9 +65,22 @@ const Contact = () => {
           how you can reach me...
         </p>
         <div className="socials">
-          <FaLinkedinIn className="social-icon linked-in" />
-          <FaGithub className="social-icon github" />
-          <FaTwitter className="social-icon twitter" />
+          <FaLinkedinIn
+            onClick={() => navToLink("linkedIn")}
+            className="social-icon linked-in"
+          />
+          <FaGithub
+            onClick={() => navToLink("github")}
+            className="social-icon github"
+          />
+          <FaTwitter
+            onClick={() => navToLink("twitter")}
+            className="social-icon twitter"
+          />
+          <FaFilePdf
+            onClick={() => navToLink("resume")}
+            className="social-icon pdf"
+          />
         </div>
         <form className="contact-form">
           <input

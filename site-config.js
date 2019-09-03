@@ -1,4 +1,5 @@
 module.exports = {
+  resume: 'https://drive.google.com/file/d/1-bXIvRPx00WC88ZDnmun4afSaPgOe3Zs/view?usp=sharing',
   github: 'https://github.com/JDeLay-JR',
   linkedIn: 'https://www.linkedin.com/in/jdelayjr/',
   tinkleCode: 'https://github.com/akramer24/tinkle',

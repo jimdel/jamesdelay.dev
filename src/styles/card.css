@@ -2,16 +2,15 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  height: 25rem;
-  margin: 2rem;
-  border-radius: 1rem;
+  height: 15rem;
+  /* border-radius: 1rem; */
   transition-duration: 0.5s;
   background: round;
 }
 
-.card-container:hover {
-  transform: translateY(-20px);
-  transition-duration: 0.5s;
+.card-image {
+  height: 100%;
+  width: 100%;
 }
 
 .overlay {

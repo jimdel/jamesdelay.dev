@@ -2,9 +2,12 @@ import React from "react";
 import Card from "./card";
 import "../styles/projects.css";
 import { blogCode, tinkleCode, scrapprCode, siteCode } from "../../site-config";
-import StockImage from "../images/stock.png";
+
+import scrappr from "../images/scrappr.png";
 import itsatechblog from "../images/itsatechblog.png";
-import personalSite from "../images/personalSite.PNG";
+import personalSite from "../images/personalSite.png";
+import tinkle from "../images/tinkle.jpg";
+import openSource from "../images/open-source.png";
 
 const Projects = () => (
   <section className="projects-container">
@@ -33,15 +36,22 @@ const Projects = () => (
         github={tinkleCode}
         blurb="NYC public bathroom locator"
         readme="https://google.com"
-        image={StockImage}
+        image={tinkle}
         title="Tinkle"
       />
       <Card
         className="projects-grid-cell"
         github={scrapprCode}
         readme="https://google.com"
-        image={StockImage}
+        image={scrappr}
         title="Scrappr"
+      />
+      <Card
+        className="projects-grid-cell"
+        github={scrapprCode}
+        readme="https://google.com"
+        image={openSource}
+        title="Open Source"
       />
     </div>
   </section>

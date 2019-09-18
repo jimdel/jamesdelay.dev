@@ -1,6 +1,6 @@
 .projects-container {
   background-color: rgba(137, 177, 241);
-  clip-path: polygon(0 15vh, 100% 0, 100% 85%, 0 100%);
+  clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
   padding-top: 10rem;
   padding-bottom: 12rem;
 }

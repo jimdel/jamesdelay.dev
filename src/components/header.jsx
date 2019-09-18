@@ -2,7 +2,7 @@ import React from "react";
 import "../styles/header.css";
 
 const Header = () => (
-<header>
+<header id="home">
   <div className="header-container center">
     <h1 className="header-main">James DeLay</h1>
     <h2 className="header-sub">JavaScript Developer</h2>

@@ -2,12 +2,12 @@ import React from "react";
 import "../styles/bio.css";
 
 const Bio = () => (
-  <section className="grid-container">
+  <section id="about" className="grid-container">
     <div className="moveInLeft flex-center grid-cell">
       <img alt="me!" className="headshot" src="https://tinyurl.com/y5gt5uaq" />
     </div>
     <div className="moveInRight grid-cell">
-      <h2 id="about" className="about">
+      <h2 className="about">
         About Me
       </h2>
       <p className="">

@@ -1,73 +1,56 @@
-.nav-container {
-  position: fixed;
-  top: 25px;
-  left: 25px;
-  background: rgba(70, 117, 192, 0.666);
-  z-index: 1000;
-  color: #fff;
-  cursor: pointer;
-  transition-duration: 0.3s;
-}
-
-.small-nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 2rem;
-  border-radius: 100%;
-  height: 4rem;
-  width: 4rem;
-}
-
-.small-nav:hover {
-  background: rgba(70, 117, 192);
-  font-size: 2.5rem;
-  height: 5rem;
-  width: 5rem;
-  /* transition-duration: 0.5s; */
-}
-
-@media (max-width: 650px) {
-  .small-nav,
-  .small-nav:hover {
-    height: 3rem;
-    width: 3rem;
-    font-size: 2rem;
-    top: 15px;
-    left: 15px;
-  }
-}
-
-.full-nav {
-  height: 100vh;
-  width: 100vw;
-  top: 0px;
-  left: 0px;
-  display: flex;
-  justify-content: center;
-  background-image: linear-gradient(
-    to right bottom,
-    rgba(137, 177, 241),
-    rgba(28, 64, 122)
-  );
-  flex-direction: column;
-}
-
-.nav-menu {
-  position: fixed;
-  top: 25px;
-  left: 25px;
-  font-size: 3rem;
-}
-
-.nav-link {
-  color: #fff;
-  font-size: 3rem;
-  margin-bottom: 7rem;
+.nav {
   width: 100%;
-  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 5%;
+  z-index: 100;
+  background: rgb(121, 161, 226);
 }
 
-.hidden {
-  display: none;
+.nav-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.logo {
+  height: 3.5rem;
+  width: 3.5rem;
+  cursor: pointer; 
+}
+
+.links-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  width: 75%;
+  list-style: none;
+  margin: 0 0 0 25%;
+  cursor: pointer;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin: 0;
+  /* border: 1px solid #fff */
+}
+
+.link:hover {
+  background: rgb(98, 137, 201);
+}
+
+.link p {
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Montserrat";
+  letter-spacing: .2rem;
+  text-shadow: 0 5px 20px rgba(0, 0, 0, 0.479);
+  margin: 0 2rem;
+}
+
+.link p:hover {
+  color: #fff;
 }

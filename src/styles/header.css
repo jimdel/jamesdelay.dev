@@ -1,6 +1,5 @@
 header {
-  position: relative;
-  height: 92vh;
+  height: 72vh;
   background-image: linear-gradient(
       to right bottom,
       rgba(137, 177, 241, 0.85),
@@ -8,15 +7,13 @@ header {
     ),
     url("../images/hero.png");
   background-size: cover;
-  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
   color: #fff;
   text-shadow: 0 5px 20px rgba(0, 0, 0, 0.479);
 }
 
 .header-container {
   text-align: center;
-  padding-top: 25%;
-  width: 100%;
+  padding-top: 10rem;
 }
 
 .header-main {
@@ -36,14 +33,23 @@ header {
   font-size: 1.5rem;
 }
 
-
-@media (max-width: 900px) {
-  header {
-    clip-path: polygon(0 0%, 100% 0, 100% 95%, 0 100%);
+@media (max-width: 580px) {
+  .header-main {
+    font-size: 3rem;
+  }
+  .header-sub {
+    font-size: 1.25rem;
   }
 }
 
-
+@media (max-width: 415px) {
+  .header-main {
+    font-size: 2rem;
+  }
+  .header-sub {
+    font-size: .85rem;
+  }
+}
 
 @keyframes moveInRight {
   0% {

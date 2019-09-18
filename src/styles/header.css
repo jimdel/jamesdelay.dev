@@ -1,4 +1,5 @@
 header {
+  position: relative;
   height: 72vh;
   background-image: linear-gradient(
       to right bottom,
@@ -13,9 +14,15 @@ header {
 
 .header-container {
   text-align: center;
-  padding-top: 10rem;
+  width: 100%;
 }
 
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 .header-main {
   letter-spacing: 10px;
   font-weight: 100;
@@ -33,12 +40,36 @@ header {
   font-size: 1.5rem;
 }
 
+.svg {
+  height: 500px;
+  width: 500px;
+}
+
+.svg path {
+  fill: rgba(255, 255, 255, 0.144);
+}
+
+.path-to-trace {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 3s linear alternate infinite;
+}
+
+/* Media Queries */
+
 @media (max-width: 580px) {
   .header-main {
     font-size: 3rem;
   }
   .header-sub {
     font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .svg {
+    height: 350px;
+    width: 350px;
   }
 }
 
@@ -51,6 +82,8 @@ header {
   }
 }
 
+/* Animations */
+
 @keyframes moveInRight {
   0% {
     opacity: 0;
@@ -62,5 +95,14 @@ header {
   100% {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 1000;
+  }
+  to {
+    stroke-dashoffset: 0;
   }
 }

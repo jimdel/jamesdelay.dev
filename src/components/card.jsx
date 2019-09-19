@@ -12,9 +12,7 @@ const Card = ({ github, readme, image, title, blurb }) => (
     className="card-container"
     style={{ backgroundImage: `url(${image})` }}
     >
-      <div className="overlay">
-        <p>Test</p>
-      </div>
+      <div className="overlay"></div>
   </div>
 );
 

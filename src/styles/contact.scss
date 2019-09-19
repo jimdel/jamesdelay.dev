@@ -5,7 +5,6 @@
   margin: 0 auto;
   padding: 2rem 1rem;
   max-width: 900px;
-
 }
 
 .contact-header {
@@ -26,6 +25,7 @@
   height: 2.3rem;
   margin: 1rem 0 3rem;
   padding: .5rem;
+  font-family: "Roboto";
 }
 
 .contact-input:focus {
@@ -34,12 +34,12 @@
 }
 
 
-.error {
+.invalid-email {
   box-shadow: 0px 0px 6px rgb(241, 137, 137);
   border: 2px solid rgb(241, 137, 137);
 }
 
-.valid {
+.valid-email {
   box-shadow: 0px 0px 6px rgb(137, 241, 137);
   border: 2px solid rgb(137, 241, 137);
 }
@@ -89,6 +89,21 @@
   border: 1px solid $black;
   margin-top: 1rem;
   color: $black;
+  font-family: "Montserrat";
+  text-transform: uppercase;
+  background: #fff;
+}
+
+.btn-disabled {
+  margin-left: auto;
+  width: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2.5rem;
+  border: 1px solid rgba($black, .35);;
+  margin-top: 1rem;
+  color: rgba($black, .35);
   font-family: "Montserrat";
   text-transform: uppercase;
   background: #fff;

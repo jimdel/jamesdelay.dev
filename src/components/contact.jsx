@@ -3,30 +3,20 @@ import "../styles/contact.scss";
 import { FaLinkedinIn, FaGithub, FaTwitter, FaFilePdf } from "react-icons/fa";
 import { linkedIn, github, resume } from "../../site-config";
 
-const handleSubmit = (evt, message) => {
-  evt.preventDefault();
-  console.log(message);
-};
-
 const isEmail = email => {
   const input = document.querySelector("#email");
   let isValid = false;
-  if (email.indexOf("@") === -1) {
-    input.classList.add("error");
+  if (email.length === 0) {
+    isValid = false
+  } else if (email.indexOf("@") === -1) {
+    input.classList.add("invalid-email");
   } else {
-    input.classList.remove("error");
+    input.classList.add("valid-email");
     isValid = true;
   }
   return isValid;
 };
 
-const isDisabled = (email, message, toggle) => {
-  const isValidEmail = isEmail(email);
-  const isValidMessage = message.length >= 15;
-  if (isValidEmail && isValidMessage) {
-    toggle(false);
-  }
-};
 
 const navToLink = type => {
   let url;
@@ -51,9 +41,8 @@ const navToLink = type => {
 };
 
 const Contact = () => {
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
   const [disabled, setDisabled] = useState(true);
+  const [email, setEmail] = useState(true);
   return (
     <section className="contact-container">
       <h2 id="contact" className="contact-header">
@@ -82,26 +71,30 @@ const Contact = () => {
             className="social-icon pdf"
           />
         </div>
-        <form className="contact-form">
+        <form className="contact-form" action="https://formspree.io/jdelay.jr@gmail.com" method="POST" >
           <input
             id="email"
-            onChange={evt => setEmail(evt.target.value)}
-            onBlur={() => isEmail(email)}
+            name="email"
+            onChange={(evt) => setEmail(evt.target.value)}
+            // onBlur={(evt => isEmail(email)}
+            className="contact-input"
+            placeholder="Email Address"
+          />
+          <input
+            id="name"
+            name="name"
             className="contact-input"
             placeholder="Email Address"
           />
           <textarea
-            onChange={evt => {
-              setMessage(evt.target.value);
-            }}
+            name="message"
             className="contact-input contact-message"
             placeholder="Message"
           />
           <button
             className="btn-submit"
-            onClick={evt => handleSubmit(evt, message)}
             type="submit"
-            disabled={disabled}
+            // disabled={isValidEmail}
           >
             Send
           </button>

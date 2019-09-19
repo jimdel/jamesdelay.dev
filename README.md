@@ -15,6 +15,7 @@ Built using Gatsby, React, Sass and FormSpree.
 
 ### Long Term
 
+- [] Code refactoring (Clean JS and make Sass DRY)
 - [] Configure `gatsby-plugin-remark` to dynamically create project "posts" like on blog site
 - [] Design post page in Figma
 - [] Code post page

@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/bio.css";
+import "../styles/bio.scss";
 
 const Bio = () => (
   <section id="about" className="grid-container">

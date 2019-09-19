@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/card.css";
+import "../styles/card.scss";
 import { FaGithub, FaBookOpen } from "react-icons/fa";
 import { PropTypes } from "prop-types";
 

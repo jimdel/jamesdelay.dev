@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../styles/contact.css";
+import "../styles/contact.scss";
 import { FaLinkedinIn, FaGithub, FaTwitter, FaFilePdf } from "react-icons/fa";
 import { linkedIn, github, resume } from "../../site-config";
 

@@ -1,20 +1,23 @@
+@import "./GLOBALS.scss";
+
 header {
   position: relative;
   height: 72vh;
   background-image: linear-gradient(
-      to right bottom,
-      rgba(137, 177, 241, 0.85),
-      rgba(28, 64, 122, 0.85)
+      to bottom right,
+      rgba($gray, .85),
+      rgba($black, .85)
     ),
     url("../images/hero.png");
   background-size: cover;
   color: #fff;
-  text-shadow: 0 5px 20px rgba(0, 0, 0, 0.479);
+  text-shadow: 0 5px 20px $black;
 }
 
 .header-container {
   text-align: center;
   width: 100%;
+  z-index: 100;
 }
 
 .center {
@@ -46,10 +49,11 @@ header {
 }
 
 .svg path {
-  fill: rgba(255, 255, 255, 0.144);
+  fill: rgba($red, .25);
 }
 
 .path-to-trace {
+  stroke: rgba($yellow, .25);
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
   animation: dash 3s linear alternate infinite;

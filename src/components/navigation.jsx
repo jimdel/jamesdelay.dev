@@ -1,6 +1,6 @@
 import React from "react";
 import { blogLink, resume } from "../../site-config";
-import "../styles/navigation.css";
+import "../styles/navigation.scss";
 
 const LINKS = ["about", "portfolio", "resume", "blog", "contact"];
 

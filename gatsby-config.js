@@ -1,11 +1,12 @@
 module.exports = {
   siteMetadata: {
     title: `James DeLay`,
-    description: `James DeLay: Full-stack JavaScript Developer`,
+    description: `JavaScript Developer`,
     author: `@JDeLay-JR`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sass`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -16,6 +17,16 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `montserrat`,
+          `lato`
+        ],
+        display: 'swap'
+      }
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `james-delay-portfolio`,
@@ -24,13 +35,7 @@ module.exports = {
         background_color: `#777777`,
         theme_color: `#777777`,
         display: `minimal-ui`,
-        icon: `src/images/favicon.png` // This path is relative to the root of the site.
-      }
-    },
-    {
-      resolve: `gatsby-plugin-typography`,
-      options: {
-        pathToConfigModule: `src/utils/typography`
+        icon: `src/images/logo.svg` // This path is relative to the root of the site.
       }
     }
     // this (optional) plugin enables Progressive Web App + Offline functionality

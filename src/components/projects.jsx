@@ -1,6 +1,6 @@
 import React from "react";
 import Card from "./card";
-import "../styles/projects.css";
+import "../styles/projects.scss";
 import { blogCode, tinkleCode, scrapprCode, siteCode } from "../../site-config";
 
 import scrappr from "../images/scrappr.png";

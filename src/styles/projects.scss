@@ -1,11 +1,22 @@
+@import "./GLOBALS.scss";
+
 .projects-container {
-  background-color: rgba(137, 177, 241);
-  padding-bottom: 5rem;
+  background-image: linear-gradient(
+    to bottom right,
+    rgba($gray, .55),
+    rgba($black, .55)
+  ),
+  url("../images/prism.svg");
+  padding-bottom: 4rem;
 }
+
 .projects-headline {
   padding-top: 3rem;
   text-align: center;
+  color: #fff;
+  font-family: "Montserrat";
 }
+
 .projects-grid-container {
   display: grid;
   justify-content: center;

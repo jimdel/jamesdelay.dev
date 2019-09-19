@@ -1,11 +1,13 @@
+@import "./GLOBALS.scss";
+
 .nav {
   width: 100%;
   position: fixed;
   top: 0;
   left: 0;
   height: 5%;
-  z-index: 100;
-  background: rgb(121, 161, 226);
+  z-index: 1000;
+  background: $black;
 }
 
 .nav-content {
@@ -39,7 +41,7 @@
 }
 
 .link:hover {
-  background: rgb(98, 137, 201);
+  background: $blue;
 }
 
 .link p {

@@ -1,9 +1,11 @@
 @import "./GLOBALS.scss";
 
 .contact-container {
-  max-width: 1200px;
+  @include container;
   margin: 0 auto;
-  padding: 2rem 3rem;
+  padding: 2rem 1rem;
+  max-width: 900px;
+
 }
 
 .contact-header {
@@ -13,7 +15,6 @@
 .contact-form-container {
   margin-left: auto;
   margin-right: auto;
-  max-width: 85%;
 }
 
 .contact-blurb {
@@ -21,21 +22,26 @@
 }
 
 .contact-input {
-  border: 2px solid #e6e6e6;
-  border-radius: 8px;
+  border: 1px solid $black;
   height: 2.3rem;
   margin: 1rem 0 3rem;
-  padding: 1rem;
+  padding: .5rem;
 }
 
 .contact-input:focus {
-  box-shadow: 0px 0px 6px rgb(137, 177, 241);
-  border: 2px solid rgb(137, 177, 241);
+  box-shadow: 0px 0px 6px $yellow;
+  border: 2px solid $yellow;
 }
+
 
 .error {
   box-shadow: 0px 0px 6px rgb(241, 137, 137);
   border: 2px solid rgb(241, 137, 137);
+}
+
+.valid {
+  box-shadow: 0px 0px 6px rgb(137, 241, 137);
+  border: 2px solid rgb(137, 241, 137);
 }
 
 .contact-message {
@@ -44,12 +50,12 @@
 }
 
 .socials {
-  width: 60%;
   margin: 0 auto 0 auto;
+  max-width: 600px;
   display: flex;
   justify-content: space-between;
   font-size: 2.5rem;
-  padding: 2rem 0 2rem;
+  padding: 2rem 1rem;
 }
 
 .social-icon,

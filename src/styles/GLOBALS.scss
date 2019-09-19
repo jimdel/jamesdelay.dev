@@ -1,8 +1,15 @@
 // Colors
 $red: #A30000;
 $yellow: #E0CA3C;
-$blue: #3E78B2; 
+$blue: #247acf; 
 $black: #0A100D;
 $gray: #463F3A;
 
 // Mixins
+@mixin text-shadow {
+    text-shadow: 0 5px 20px $black;
+}
+
+@mixin container {
+    max-width: 1300px;
+}

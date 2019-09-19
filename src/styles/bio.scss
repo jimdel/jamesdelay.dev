@@ -1,3 +1,5 @@
+@import "./GLOBALS.scss";
+
 .grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -5,7 +7,7 @@
   grid-row-gap: 1rem;
   padding-top: 5rem;
   padding-bottom: 2rem;
-  max-width: 1200px;
+  @include container;
   margin: 0 auto;
 }
 
@@ -52,8 +54,16 @@
   padding: 0 1rem 0 1rem;
 }
 
-.about {
+.about-header {
   text-align: center;
+}
+
+.about-sub-header {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Montserrat";
+  margin-bottom: 1rem;
+  color: $red;
 }
 
 .moveInRight {

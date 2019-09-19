@@ -11,7 +11,11 @@ const Card = ({ github, readme, image, title, blurb }) => (
   <div
     className="card-container"
     style={{ backgroundImage: `url(${image})` }}
-  />
+    >
+      <div className="overlay">
+        <p>Test</p>
+      </div>
+  </div>
 );
 
 Card.propTypes = {
@@ -21,18 +25,5 @@ Card.propTypes = {
   title: PropTypes.string.isRequired,
   blurb: PropTypes.string.isRequired
 };
-
-// <div className="card-button-container">
-{
-  /* <FaGithub
-onClick={() => navToExternalURL(github)}
-style={{ fontSize: `3rem`, cursor: `pointer` }}
-/>
-<FaBookOpen
-onClick={() => navToExternalURL(readme)}
-style={{ fontSize: `3rem`, cursor: `pointer` }}
-/>
-</div> */
-}
 
 export default Card;

@@ -1,3 +1,5 @@
+@import "./GLOBALS.scss";
+
 .card-container {
   position: relative;
   display: flex;
@@ -6,19 +8,28 @@
   /* border-radius: 1rem; */
   transition-duration: 0.5s;
   background: round;
+  box-shadow: 1px 6px 9px rgba($black, .55);
+}
+
+.card-container:hover {
+  box-shadow: none;
+  // transform: scale(1.05);
+
+  .overlay {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: rgba($black, .55);
+    transition-duration: 0.5s;
+  }
 }
 
 .card-image {
   height: 100%;
   width: 100%;
-}
-
-.overlay {
-  height: 100%;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.45);
-  border-radius: 1rem;
-  z-index: 0;
 }
 
 .project-name {

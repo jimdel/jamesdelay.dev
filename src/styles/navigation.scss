@@ -11,7 +11,7 @@
 }
 
 .nav-content {
-  max-width: 1200px;
+  @include container;
   margin: 0 auto;
   display: flex;
 }
@@ -41,7 +41,8 @@
 }
 
 .link:hover {
-  background: $blue;
+  background: $yellow;
+  // text-shadow: 
 }
 
 .link p {

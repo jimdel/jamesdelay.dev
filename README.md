@@ -10,7 +10,7 @@ Built using Gatsby, React, Sass and FormSpree.
 
 - [] Fix email validation and button enabling/disabling
 - [] Create a responsive navigation
-- [] Create an overlay for projects that links to GitHub README
+- [] Create an overlay for projects that links to GitHub README.md
 
 ### Long Term
 

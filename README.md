@@ -9,6 +9,7 @@ Built using Gatsby, React, Sass and FormSpree.
 ### Immediate
 
 - [] Fix email validation and button enabling/disabling
+- [] Change `react-typing-effect` to another module, not compatible with Netlify build
 - [] Create a responsive navigation
 - [] Create an overlay for projects that links to GitHub README.md
 

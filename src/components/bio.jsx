@@ -10,13 +10,13 @@ const Bio = () => (
     <div className="moveInRight grid-cell">
       <h2 className="about-header">About Me</h2>
       <Typing speed={75} delay={1000}>
-        <h3>Coffee Aficionado</h3>
+        <p className="about-sub-header">Coffee Aficionado</p>
         <Typing.Delay ms={3000} />
         <Typing.Backspace count={"Coffee Aficionado".length} />
-        <h3>Fantasy Nerd</h3>
+        <p className="about-sub-header">Fantasy Nerd</p>
         <Typing.Delay ms={3000} />
         <Typing.Backspace count={"Fantasy Nerd".length} />
-        <h3>JavaScript Developer</h3>
+        <p className="about-sub-header">JavaScript Developer</p>
       </Typing>
       <p className="">
         I first discovered coding while in middle school. I dabbled with HTML

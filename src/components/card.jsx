@@ -8,11 +8,8 @@ const navToExternalURL = url => {
 };
 
 const Card = ({ github, readme, image, title, blurb }) => (
-  <div
-    className="card-container"
-    style={{ backgroundImage: `url(${image})` }}
-    >
-      <div className="overlay"></div>
+  <div className="card-container" style={{ backgroundImage: `url(${image})` }}>
+    <div className="overlay"></div>
   </div>
 );
 

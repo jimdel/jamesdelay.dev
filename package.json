@@ -22,10 +22,7 @@
         "react-dom": "^16.8.6",
         "react-helmet": "^5.2.0",
         "react-icons": "^3.7.0",
-        "react-typing-effect": "^2.0.2",
-        "react-typography": "^0.16.19",
-        "typography": "^0.16.19",
-        "typography-theme-judah": "^0.16.19"
+        "react-typing-animation": "^1.6.2"
     },
     "keywords": [
         "gatsby"

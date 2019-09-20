@@ -3,21 +3,6 @@ import "../styles/contact.scss";
 import { FaLinkedinIn, FaGithub, FaTwitter, FaFilePdf } from "react-icons/fa";
 import { linkedIn, github, resume } from "../../site-config";
 
-const isEmail = email => {
-  const input = document.querySelector("#email");
-  let isValid = false;
-  if (email.length === 0) {
-    isValid = false
-  } else if (email.indexOf("@") === -1) {
-    input.classList.add("invalid-email");
-  } else {
-    input.classList.add("valid-email");
-    isValid = true;
-  }
-  return isValid;
-};
-
-
 const navToLink = type => {
   let url;
   switch (type) {
@@ -38,11 +23,24 @@ const navToLink = type => {
       break;
   }
   window.location.href = url;
+  return null;
+};
+
+const doValidateEmail = str => {
+  const EMAIL_EL = document.querySelector("#email");
+  if (str.length === 0 || str.indexOf("@") === -1) {
+    EMAIL_EL.classList.add("invalid-email");
+    EMAIL_EL.classList.remove("valid-email");
+    return false;
+  }
+  EMAIL_EL.classList.remove("invalid-email");
+  EMAIL_EL.classList.add("valid-email");
+  return true;
 };
 
 const Contact = () => {
   const [disabled, setDisabled] = useState(true);
-  const [email, setEmail] = useState(true);
+  const [email, setEmail] = useState("");
   return (
     <section className="contact-container">
       <h2 id="contact" className="contact-header">
@@ -71,12 +69,20 @@ const Contact = () => {
             className="social-icon pdf"
           />
         </div>
-        <form className="contact-form" action="https://formspree.io/jdelay.jr@gmail.com" method="POST" >
+        <form
+          className="contact-form"
+          action="https://formspree.io/jdelay.jr@gmail.com"
+          method="POST"
+        >
           <input
             id="email"
             name="email"
-            onChange={(evt) => setEmail(evt.target.value)}
-            // onBlur={(evt => isEmail(email)}
+            onChange={evt => setEmail(evt.target.value)}
+            onBlur={() => {
+              return doValidateEmail(email)
+                ? setDisabled(false)
+                : setDisabled(true);
+            }}
             className="contact-input"
             placeholder="Email Address"
           />
@@ -84,7 +90,7 @@ const Contact = () => {
             id="name"
             name="name"
             className="contact-input"
-            placeholder="Email Address"
+            placeholder="Name"
           />
           <textarea
             name="message"
@@ -92,9 +98,9 @@ const Contact = () => {
             placeholder="Message"
           />
           <button
-            className="btn-submit"
+            className={disabled ? "btn-disabled" : "btn-submit"}
             type="submit"
-            // disabled={isValidEmail}
+            disabled={disabled}
           >
             Send
           </button>

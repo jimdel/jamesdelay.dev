@@ -3,12 +3,10 @@
 header {
   @include text-shadow;
   position: relative;
-  height: 72vh;
-  background-image: linear-gradient(
-      to bottom right,
+  height: 100vh;
+  background-image: linear-gradient(to bottom right,
       rgba($gray, .85),
-      rgba($black, .85)
-    ),
+      rgba($black, .85)),
     url("../images/hero.png");
   background-size: cover;
   color: #fff;
@@ -27,6 +25,7 @@ header {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
 .header-main {
   letter-spacing: 10px;
   font-weight: 100;
@@ -66,6 +65,7 @@ header {
   .header-main {
     font-size: 3rem;
   }
+
   .header-sub {
     font-size: 1.25rem;
   }
@@ -82,6 +82,7 @@ header {
   .header-main {
     font-size: 2rem;
   }
+
   .header-sub {
     font-size: .85rem;
   }
@@ -94,9 +95,11 @@ header {
     opacity: 0;
     transform: translateX(-200px);
   }
+
   80% {
     transform: translateX(10px);
   }
+
   100% {
     opacity: 1;
     transform: translateX(0);
@@ -107,6 +110,7 @@ header {
   from {
     stroke-dashoffset: 1000;
   }
+
   to {
     stroke-dashoffset: 0;
   }

@@ -11,9 +11,7 @@ import openSource from "../images/open-source.png";
 
 const Projects = () => (
   <section id="portfolio" className="projects-container">
-    <h2 className="projects-headline">
-      Projects
-    </h2>
+    <h2 className="projects-headline">Projects</h2>
     <div className="projects-grid-container">
       <Card
         className="projects-grid-cell"

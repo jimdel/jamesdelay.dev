@@ -141,12 +141,20 @@
   color: rgba(0, 116, 178, 1);
 }
 
-.twitter {
-  color: rgba(29, 161, 242, 0.5);
+.dribbble {
+  color: rgba(195, 35, 97, .5);
 }
 
-.twitter:hover {
-  color: rgba(29, 161, 242, 1);
+.dribbble:hover {
+  color: rgba(195, 35, 97, 1);
+}
+
+.codepen {
+  color: rgba(0, 0, 0, .5);
+}
+
+.codepen:hover {
+  color: black;
 }
 
 .pdf {
@@ -158,8 +166,12 @@
 }
 
 @media (max-width: 1000px) {
-  .twitter {
-    color: rgba(29, 161, 242, 1);
+  .dribbble {
+    color: rgba(195, 35, 97, 1);
+  }
+
+  .codepen {
+    color: black;
   }
 
   .linked-in {

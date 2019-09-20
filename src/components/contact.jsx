@@ -1,7 +1,13 @@
 import React, { useState } from "react";
 import "../styles/contact.scss";
-import { FaLinkedinIn, FaGithub, FaTwitter, FaFilePdf } from "react-icons/fa";
-import { linkedIn, github, resume } from "../../site-config";
+import {
+  FaLinkedinIn,
+  FaGithub,
+  FaCodepen,
+  FaFilePdf,
+  FaDribbble
+} from "react-icons/fa";
+import { linkedIn, github, resume, dribbble, codepen } from "../../site-config";
 
 const navToLink = type => {
   let url;
@@ -12,8 +18,11 @@ const navToLink = type => {
     case "github":
       url = github;
       break;
-    case "twitter":
-      url = "https://twitter.com";
+    case "dribbble":
+      url = dribbble;
+      break;
+    case "codepen":
+      url = codepen;
       break;
     case "resume":
       url = resume;
@@ -60,9 +69,13 @@ const Contact = () => {
             onClick={() => navToLink("github")}
             className="social-icon github"
           />
-          <FaTwitter
-            onClick={() => navToLink("twitter")}
-            className="social-icon twitter"
+          <FaDribbble
+            onClick={() => navToLink("dribbble")}
+            className="social-icon dribbble"
+          />
+          <FaCodepen
+            onClick={() => navToLink("codepen")}
+            className="social-icon codepen"
           />
           <FaFilePdf
             onClick={() => navToLink("resume")}

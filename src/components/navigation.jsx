@@ -1,4 +1,8 @@
+/* eslint-disable jsx-a11y/click-events-have-key-events */
+/* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
+
 import React from "react";
+import { FaBars } from "react-icons/fa";
 import { blogLink, resume } from "../../site-config";
 import "../styles/navigation.scss";
 
@@ -21,7 +25,9 @@ const Nav = () => {
   return (
     <nav className="nav">
       <div className="nav-content">
+        {/* <FaBars></FaBars> */}
         <svg
+          // eslint-disable-next-line no-return-assign
           onClick={() => (window.location.hash = "/#home")}
           className="logo"
           viewBox="0 0 500 500"
@@ -35,7 +41,11 @@ const Nav = () => {
         </svg>
         <ul className="links-container">
           {LINKS.map(link => (
-            <li onClick={() => handleLinkClick(link)} className="link">
+            <li
+              key={link}
+              onClick={() => handleLinkClick(link)}
+              className="link"
+            >
               <p>{link}</p>
             </li>
           ))}

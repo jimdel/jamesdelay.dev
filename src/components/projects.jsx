@@ -15,39 +15,31 @@ const Projects = () => (
     <div className="projects-grid-container">
       <Card
         className="projects-grid-cell"
-        github={blogCode}
-        readme="https://google.com"
+        link={blogCode}
         image={itsatechblog}
         title="Itsa Tech Blog"
-        blurb="Web Dev Tech Blog"
       />
       <Card
         className="projects-grid-cell"
-        github={siteCode}
-        blurb="You're here!"
-        readme="https://google.com"
+        link={siteCode}
         image={personalSite}
         title="Personal Site"
       />
       <Card
         className="projects-grid-cell"
-        github={tinkleCode}
-        blurb="NYC public bathroom locator"
-        readme="https://google.com"
+        link={tinkleCode}
         image={tinkle}
         title="Tinkle"
       />
       <Card
         className="projects-grid-cell"
-        github={scrapprCode}
-        readme="https://google.com"
+        link={scrapprCode}
         image={scrappr}
         title="Scrappr"
       />
       <Card
         className="projects-grid-cell"
-        github={scrapprCode}
-        readme="https://google.com"
+        link={scrapprCode}
         image={openSource}
         title="Open Source"
       />

@@ -19,7 +19,7 @@
 .logo {
   height: 3.5rem;
   width: 3.5rem;
-  cursor: pointer; 
+  cursor: pointer;
 }
 
 .links-container {
@@ -57,3 +57,5 @@
 .link p:hover {
   color: #fff;
 }
+
+@media (max-width: 1100px) {}

@@ -37,12 +37,6 @@ const Projects = () => (
         image={scrappr}
         title="Scrappr"
       />
-      <Card
-        className="projects-grid-cell"
-        link={scrapprCode}
-        image={openSource}
-        title="Open Source"
-      />
     </div>
   </section>
 );

@@ -12,7 +12,7 @@ import { StaticQuery, graphql } from "gatsby";
 
 // Components & Styles
 import Header from "./header";
-import Navigation from "./navigation";
+import Navigation from "./navigation-controller";
 import "../styles/layout.scss";
 
 const Layout = ({ children }) => (

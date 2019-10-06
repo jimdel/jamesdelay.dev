@@ -1,13 +1,19 @@
 @import "./GLOBALS.scss";
 
 .projects-container {
-  background-image: linear-gradient(to bottom right,
-      rgba($gray, .35),
-      rgba($black, .35)),
-    url("../images/prism.svg");
-  padding-bottom: 4rem;
-  border-top: .3rem solid $black;
-  border-bottom: .3rem solid $black;
+  position: relative;
+  padding-bottom: 5rem;
+}
+
+.projects-grid-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/prism.svg");
+  filter: grayscale(100%);
 }
 
 .projects-headline {

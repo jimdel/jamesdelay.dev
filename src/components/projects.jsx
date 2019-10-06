@@ -7,7 +7,6 @@ import scrappr from "../images/scrappr.png";
 import itsatechblog from "../images/itsatechblog.png";
 import personalSite from "../images/personalsite.png";
 import tinkle from "../images/tinkle.jpg";
-import openSource from "../images/open-source.png";
 
 const Projects = () => (
   <section id="portfolio" className="projects-container">

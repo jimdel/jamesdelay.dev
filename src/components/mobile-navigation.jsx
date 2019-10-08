@@ -2,6 +2,7 @@
 /* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
 
 import React, { useState } from "react";
+import PropTypes from "prop-types";
 import { FaBars } from "react-icons/fa";
 import "../styles/mobile-navigation.scss";
 
@@ -30,6 +31,7 @@ const MobileNavigation = props => {
       <div className={isPanelVisible ? "side-panel" : "hidden"}>
         {links.map(link => (
           <p
+            key={link}
             className="mobile-nav-link"
             onClick={() => {
               clickHandler(link);
@@ -42,6 +44,11 @@ const MobileNavigation = props => {
       </div>
     </nav>
   );
+};
+
+MobileNavigation.propTypes = {
+  links: PropTypes.arrayOf(PropTypes.string).isRequired,
+  clickHandler: PropTypes.func.isRequired
 };
 
 export default MobileNavigation;

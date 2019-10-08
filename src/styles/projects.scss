@@ -20,7 +20,9 @@
   @include text-shadow;
   padding-top: 3rem;
   text-align: center;
-  color: #fff;
+  color: $black;
+  position: relative;
+  z-index: 1000;
   font-family: "Montserrat";
 }
 

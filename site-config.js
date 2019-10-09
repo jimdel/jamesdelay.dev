@@ -7,6 +7,6 @@ module.exports = {
   tinkleCode: 'https://github.com/JDeLay-JR/tinkle',
   blogCode: 'https://github.com/JDeLay-JR/BlogSite_2.0',
   blogLink: "https://itsatechblog.netlify.com",
-  scrapprCode: 'https://github.com/ScrapprApp/Scrapbooker',
+  scrapprCode: 'https://github.com/JDeLay-JR/Scrapbooker',
   siteCode: 'https://github.com/JDeLay-JR/james-delay-portfolio'
 }

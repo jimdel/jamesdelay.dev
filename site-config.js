@@ -1,5 +1,5 @@
 module.exports = {
-  resume: 'https://drive.google.com/file/d/1-bXIvRPx00WC88ZDnmun4afSaPgOe3Zs/view?usp=sharing',
+  resume: 'https://pdfhost.io/v/aQDdxhYGm_James_DeLay_Resumepdf.pdf',
   github: 'https://github.com/JDeLay-JR',
   linkedIn: 'https://www.linkedin.com/in/jdelayjr/',
   codepen: "https://codepen.io/jdelay-jr",

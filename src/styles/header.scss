@@ -1,16 +1,20 @@
 @import "./GLOBALS.scss";
 
-header {
+.background-image-wrapper {
   @include text-shadow;
   position: relative;
   height: 100vh;
-  background-image: linear-gradient(to bottom right,
-      rgba($gray, .85),
-      rgba($black, .85)),
-    url("../images/hero.png");
   background-size: cover;
   color: #fff;
   border-bottom: .2rem solid $black;
+}
+
+.background-image-overlay {
+  z-index: 10000;
+  background-image: linear-gradient(to bottom right,
+      rgba($gray, .85),
+      rgba($black, .85));
+  height: 100%;
 }
 
 .header-container {

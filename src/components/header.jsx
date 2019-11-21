@@ -1,6 +1,7 @@
 import React from "react";
 import { graphql, StaticQuery } from "gatsby";
 import BackgroundImage from "gatsby-background-image";
+import PropTypes from "prop-types";
 
 import "../styles/header.scss";
 
@@ -53,5 +54,9 @@ const Header = () => (
     <BackgroundSection className="background-image-wrapper" />
   </header>
 );
+
+BackgroundSection.propTypes = {
+  className: PropTypes.string.isRequired
+};
 
 export default Header;
